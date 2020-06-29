@@ -32,8 +32,7 @@
 
       <v-col cols="12" md="8"  class="pb-12">
 <!--        文章列表-->
-      <Articlelist/>
-
+        <Archive />
       </v-col>
 
 
@@ -43,7 +42,7 @@
 <Calendar/>
       </v-col>
         <v-col>
-
+<!--          <Archive/>-->
         </v-col>
 
 
@@ -56,19 +55,14 @@
 
 <script>
 
-  import Articlelist from '../components/Articlelist'
+  import Archive from '../components/Archive'
   import Calendar from '../components/Calendar'
-
-
 
 export default {
 
     components:{
-
-      Articlelist,
+        Archive,
         Calendar,
-
-
     },
   data(){
     return {
