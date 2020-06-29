@@ -22,14 +22,20 @@
         <span>Nearby</span>
         <v-icon>mdi-map-marker</v-icon>
       </v-btn>
+        <v-spacer></v-spacer>
+          <Scrolltop />
     </v-bottom-navigation>
 
 
 </template>
 
 <script>
+    import Scrolltop from '../components/Scrolltop'
     export default {
-        name: "Bottomnav"
+        name: "Bottomnav",
+        components:{
+            Scrolltop,
+        }
     }
 </script>
 

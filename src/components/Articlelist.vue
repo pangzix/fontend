@@ -62,7 +62,6 @@
               ).then(response => {
                   this.info = response.data.results;
                   this.total = response.data.count;
-                  console.log(this.info);
 
               }).catch(error => {
                   console.log(error.response);

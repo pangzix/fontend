@@ -25,7 +25,7 @@
         },
 
         mounted(){
-            console.log(this.year,this.month)
+
                 var year=this.year
                 var month = this.month
                 this.$axios.get("http://192.168.1.20/api/articles/",{
@@ -36,7 +36,6 @@
                 })
                     .then(response => {
                         this.info2 = response.data.results;
-                        console.log(this.info2)
                     })
                     .catch(error => {
                         console.log(error.response)

@@ -3,7 +3,7 @@
         <v-toolbar flat class="grey lighten-4">
             <v-app-bar-nav-icon @click="drawer =!drawer"></v-app-bar-nav-icon>
             <v-toolbar-title class="text-uppercase grey--text">
-                <span class="font-weight-light">Notebook</span>
+                <span class="font-weight-light" @click="$router.push('/')">Notebook</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
 

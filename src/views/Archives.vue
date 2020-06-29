@@ -38,8 +38,7 @@
 
       <v-col cols="12" md="4" class="pb-12">
       <v-col cols="auto">
-<!--日历-->
-<Calendar/>
+
       </v-col>
         <v-col>
 <!--          <Archive/>-->
@@ -56,13 +55,13 @@
 <script>
 
   import Archive from '../components/Archive'
-  import Calendar from '../components/Calendar'
+  // import Calendar from '../components/Calendar'
 
 export default {
 
     components:{
         Archive,
-        Calendar,
+        // Calendar,
     },
   data(){
     return {

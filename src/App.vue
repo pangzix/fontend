@@ -3,6 +3,7 @@
     <v-content>
       <navbar/>
       <router-view/>
+
     </v-content>
     <Bottomnav />
   </v-app>
