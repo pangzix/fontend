@@ -37,7 +37,7 @@
         },
         mounted() {
             var id = this.cid
-                this.$axios.get("http://192.168.1.20/api/categorylist/" ,{
+                this.$axios.get("http://api.lesphon.fun/api/categorylist/" ,{
                     params:{
                         category:id,
                     }

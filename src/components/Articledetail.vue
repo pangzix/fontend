@@ -30,7 +30,7 @@
             initDetail(){
                 var aid = this.$route.params.id;
                 axios
-                     .get('http://192.168.1.20/api/articles/'+ aid +'/')
+                     .get('http://api.lesphon.fun/api/articles/'+ aid +'/')
                      .then(response  => (this.info = response.data))
                      .catch(error => console.log(error))
             }
