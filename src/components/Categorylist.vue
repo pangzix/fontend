@@ -38,7 +38,7 @@
 
         },
         mounted() {
-            this.$axios.get("http://192.168.1.20/api/categories/")
+            this.$axios.get("http://api.lesphon.fun/api/categories/")
                 .then(response => {
                     this.info = response.data;
                 })
