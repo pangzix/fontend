@@ -4,7 +4,9 @@
             <v-col class="pb-12">
                 <div class="display-3">{{info.title}}</div>
                 <v-spacer></v-spacer>
-                <div v-html="info.body_html" class="text-left"></div>
+                <div class="markdown-body text-left" >
+                <VueMarkdown :source="info.body"  v-highlight></VueMarkdown>
+                </div>
             </v-col>
         </v-row>
     </v-container>
@@ -13,9 +15,11 @@
 
 <script>
     import axios from 'axios'
+    import VueMarkdown from 'vue-markdown'
     export default {
         name: "Articledetail",
         components:{
+            VueMarkdown,
         },
         data () {
             return {
