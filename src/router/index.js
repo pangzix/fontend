@@ -7,6 +7,7 @@ import Category from "../views/Category"
 import Tools from "../views/Tools";
 import Archivelist from "../components/Archivelist";
 
+
 Vue.use(VueRouter)
 
 

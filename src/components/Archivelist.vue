@@ -28,7 +28,7 @@
 
                 var year=this.year
                 var month = this.month
-                this.$axios.get("http://api.lesphon.fun/api/articles/",{
+                this.$axios.get("http://api.lesphon.fun/articles/",{
                     params:{
                         created_year:year,
                         created_month:month,

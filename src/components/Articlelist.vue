@@ -54,7 +54,7 @@
         methods:{
 
           change(){
-              this.$axios.get("http://api.lesphon.fun/api/articles/",{
+              this.$axios.get("http://api.lesphon.fun/articles/",{
                   params:{
                       p:this.page,
                   }

@@ -35,7 +35,7 @@
             }
         },
         mounted(){
-                this.$axios.get("http://api.lesphon.fun/api/articles/archive/dates/")
+                this.$axios.get("http://api.lesphon.fun/articles/archive/dates/")
                     .then(response => {
                         this.info = response.data;
                     }).catch(error => console.log(error.response))
