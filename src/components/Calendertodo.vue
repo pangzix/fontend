@@ -124,7 +124,7 @@
     }),
     mounted () {
       this.$refs.calendar.checkChange()
-      this.$axios.get("http://api.lesphon.fun/todolist/")
+      this.$axios.get("http://api.lesphon.fun/api/todolist/")
           .then(response => {
               this.events = response.data
           })
