@@ -3,10 +3,10 @@
         <v-row>
             <v-col class="pb-12">
                 <div class="display-1">{{info.title}}</div>
-                <v-sheet color="indigo lighten-5" >{{info.author.username}}|&&|{{info.created}}</v-sheet>
+                <v-sheet color="indigo lighten-5" v-if="info.author.username" >{{info.author.username}}|&&|{{info.created}}</v-sheet>
                 <v-spacer></v-spacer>
-                <pre class="markdown-body text-left" >
-                <VueMarkdown :source="info.body" v-highlightjs ></VueMarkdown>
+                <pre class="markdown-body text-left">
+                <VueMarkdown :source="info.body" ></VueMarkdown>
                 </pre>
 
             </v-col>
@@ -26,7 +26,11 @@
         data () {
             return {
                 content:'',
-                info:'',
+                info:{
+                    author:{
+                        username:''
+                    }
+                }
 
 
             }
@@ -35,20 +39,14 @@
         watch:{
 
         },
-        methods:{
-            initDetail(){
+        mounted(){
                 var aid = this.$route.params.id;
                 axios
                      .get('http://api.lesphon.fun/api/articles/'+ aid +'/')
                      .then(response  => (this.info = response.data))
                      .catch(error => console.log(error))
-            }
-
         },
-        mounted() {
-            this.initDetail()
 
-        }
     }
 
 </script>
