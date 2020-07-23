@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav >
         <v-toolbar flat class="grey lighten-4">
             <v-app-bar-nav-icon @click="drawer =!drawer"></v-app-bar-nav-icon>
             <v-toolbar-title class="text-uppercase grey--text">
@@ -7,11 +7,24 @@
             </v-toolbar-title>
             <v-spacer></v-spacer>
 
+
+
+
+
+<!--            搜索-->
+            <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                 <v-btn icon v-bind="attrs" v-on="on">
+                    <v-icon>mdi-magnify</v-icon>
+                </v-btn>
+                </template>
+                    <span>未完成</span>
+            </v-tooltip>
         </v-toolbar>
 
 
 
-        <v-navigation-drawer  v-model="drawer"  app  color="grey lighten-4" light bottom>
+        <v-navigation-drawer  v-model="drawer"  app  color="grey lighten-4" light bottom >
             <v-list>
                 <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
                     <v-list-item-action>

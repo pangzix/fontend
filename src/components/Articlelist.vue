@@ -15,9 +15,14 @@
             <v-card-actions>
                 <v-btn text color="deep-purple accent-4" :to="'/article/'+article.id">More</v-btn>
                 <v-spacer></v-spacer>
-                <v-btn icon>
+                <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                 <v-btn icon v-bind="attrs" v-on="on">
                     <v-icon>mdi-heart</v-icon>
                 </v-btn>
+                </template>
+                    <span>未完成</span>
+                </v-tooltip>
             </v-card-actions>
             <v-divider/>
         </v-card>

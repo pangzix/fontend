@@ -1,23 +1,33 @@
 <template>
   <v-app>
-    <v-content>
-      <navbar/>
-      <router-view/>
-
-    </v-content>
-    <Bottomnav />
+    <v-main >
+        <navbar/>
+            <v-row >
+                <v-col cols="8">
+                    <keep-alive>
+                        <router-view/>
+                    </keep-alive>
+                </v-col>
+                <v-col cols="4" >
+                    <Todolist/>
+                    <Aboutside/>
+                </v-col>
+            </v-row>
+    </v-main>
   </v-app>
 </template>
 
 <script>
   import Navbar from './components/Navbar'
-  import Bottomnav from './components/Bottomnav'
+  import Todolist from './components/Todolist'
+  import Aboutside from './components/About_side'
 
   export default{
     name:'app',
     components:{
       Navbar,
-      Bottomnav,
+      Todolist,
+      Aboutside,
     }
   }
 </script>

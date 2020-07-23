@@ -4,6 +4,7 @@
            class="scroll-to-top"
            :style="`bottom:${this.bottom};right:${this.right};`"
            v-show="visible"
+           color="red"
            @click="backToTop">
     <v-icon>mdi-up</v-icon>
 </v-btn>
