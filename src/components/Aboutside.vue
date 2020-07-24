@@ -5,7 +5,7 @@
             About
         </v-card-title>
         <v-card-text>
-            小白、初学python
+            learning vue
         </v-card-text>
     </v-card>
     </div>

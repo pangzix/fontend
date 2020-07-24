@@ -1,16 +1,18 @@
 <template>
   <v-app>
-    <v-main >
-        <navbar/>
+      <navbar/>
+      <v-main>
+          <v-container  >
             <v-row >
                 <v-col cols="12" xs="12" md="8">
                         <router-view/>
                 </v-col>
                 <v-col cols="12"  xs="12" md="4">
-                    <Todolist/>
-                    <Aboutside/>
+                    <Todolist />
+                    <Aboutside />
                 </v-col>
             </v-row>
+          </v-container>
     </v-main>
   </v-app>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div >
-        <v-card  light flat class="mx-auto" v-for="article in info" :key="article.id" >
+        <v-card  light flat class="mx-auto" v-for="article in info" :key="article.id"  app>
             <v-list-item>
                 <v-img src="" height="194" color="color"></v-img>
                 <v-list-item-content>

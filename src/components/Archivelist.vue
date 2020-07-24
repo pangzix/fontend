@@ -1,7 +1,7 @@
 <template>
 
 
-    <v-list >
+    <v-list app>
         <v-list-item-group v-model="article" >
             <v-list-item  v-for="article in info2" :key="article.id">
                 <v-list-item-content @click="$router.push('/article/'+ article.id)">{{article.title}}</v-list-item-content>
