@@ -1,9 +1,11 @@
 <template>
+<div>
 
+</div>
 </template>
 
 <script>
-    const BASE_URL = 'http://127.0.0.1/api/';
+    const BASE_URL = 'http://api.lesphon.fun/api/';
 
     export default {
         name: "Global",

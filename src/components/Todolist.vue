@@ -1,5 +1,5 @@
 <template>
-    <v-div>
+    <div>
     <v-card outlined  color="grey lighten-4">
         <v-card-title class="text-uppercase">
             Todos
@@ -14,7 +14,7 @@
             </v-list>
         </v-card-text>
     </v-card>
-    </v-div>
+    </div>
 </template>
 
 <script>

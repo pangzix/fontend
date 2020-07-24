@@ -1,5 +1,5 @@
 <template>
-    <v-div>
+    <div>
     <v-card outlined  color="grey lighten-4" class="text-uppercase">
         <v-card-title >
             About
@@ -8,12 +8,12 @@
             小白、初学python
         </v-card-text>
     </v-card>
-    </v-div>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "About_side"
+        name: "Aboutside"
     }
 </script>
 

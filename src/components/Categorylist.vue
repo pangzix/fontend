@@ -38,7 +38,7 @@
 
         },
         mounted() {
-            this.$axios.get("http://api.lesphon.fun/api/categories/")
+            this.$axios.get("categories/")
                 .then(response => {
                     this.info = response.data;
                 })

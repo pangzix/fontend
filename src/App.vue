@@ -3,12 +3,10 @@
     <v-main >
         <navbar/>
             <v-row >
-                <v-col cols="8">
-                    <keep-alive>
+                <v-col cols="12" xs="12" md="8">
                         <router-view/>
-                    </keep-alive>
                 </v-col>
-                <v-col cols="4" >
+                <v-col cols="12"  xs="12" md="4">
                     <Todolist/>
                     <Aboutside/>
                 </v-col>
@@ -20,7 +18,7 @@
 <script>
   import Navbar from './components/Navbar'
   import Todolist from './components/Todolist'
-  import Aboutside from './components/About_side'
+  import Aboutside from './components/Aboutside'
 
   export default{
     name:'app',
