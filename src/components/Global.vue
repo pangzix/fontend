@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    const BASE_URL = 'http://api.lesphon.fun/api/';
+    const BASE_URL = 'https://api.lesphon.fun/api/';
 
     export default {
         name: "Global",
